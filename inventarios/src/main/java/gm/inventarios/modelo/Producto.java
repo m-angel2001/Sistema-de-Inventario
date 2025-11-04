@@ -66,7 +66,7 @@ public class Producto {
     public void setExistencia(Integer existencia) {
         this.existencia = existencia;
     }
-    // Metodo to string
+    // Metodo toString
 
 
     @Override
