@@ -10,4 +10,6 @@ public class InventariosApplication {
 		SpringApplication.run(InventariosApplication.class, args);
 	}
 
+    // http://localhost:8080/inventario-app
+
 }
