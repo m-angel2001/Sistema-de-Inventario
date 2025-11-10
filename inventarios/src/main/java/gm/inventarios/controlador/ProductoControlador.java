@@ -33,8 +33,8 @@ public class ProductoControlador {
 
     // Buscar un producto por ID
     @GetMapping("/{id}")
-    public Producto buscarProductoPorId(@RequestBody Producto producto) {
-        return productoServicio.guardarProducto(producto);
+    public Producto buscarProductoPorId(@PathVariable Integer id) {
+        return productoServicio.buscarProductoPorId(id);
     }
 
     // Agregar un nuevo producto
