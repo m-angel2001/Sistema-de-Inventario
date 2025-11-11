@@ -30,4 +30,11 @@ private obtenerProductos(): void{
 editarProducto(id: number) {
   this.enrutador.navigate(['editar-producto', id]);
 }
+
+eliminarProducto(id: number) {
+  this.productoServicio.eliminarProducto(id).subscribe({
+    next: (datos) => this.obtenerProductos(),
+    error: (error) => console.log('Error al eliminar producto: ' , error)
+  });
+}
 }

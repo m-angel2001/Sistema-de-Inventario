@@ -20,9 +20,14 @@
         <td>{{producto.precio}}</td>
         <td>{{producto.existencia}}</td>
         <td class="text-center">
+          <!--Editar Producto-->
           <button (click)="editarProducto(producto.idProducto)"
-          class="btn btn-warning -btn-smme-3">Editar</button>
+          class="btn btn-warning btn-sm me-3">Editar</button>
+          <!--Eliminar Producto-->
+          <button (click)="eliminarProducto(producto.idProducto)"
+          class="btn btn-danger btn-sm">Editar</button>
         </td>
+
       </tr>
       }
       
